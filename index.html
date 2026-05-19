@@ -85,8 +85,8 @@ a{color:inherit;text-decoration:none;}
    ============================================ */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 48px;max-width:var(--max-w);margin:0 auto;left:50%;transform:translateX(-50%);width:100%;
+  display:flex;align-items:center;justify-content:center;
+  padding:0;
   background:rgba(248,246,242,0.90);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border-bottom:1px solid transparent;
   transition:border-color .3s,box-shadow .3s,background .3s;
@@ -415,21 +415,23 @@ footer{background:var(--ink);padding:60px 0 32px;}
      NAVIGATION
      ============================================ -->
 <nav id="nav">
-  <a href="#" class="nav-logo">
-    <img src="images/logo-dng-color.jpg" alt="DNG Investment">
-  </a>
-  <ul class="nav-l">
-    <li><a href="#about">Về DNG</a></li>
-    <li><a href="#sectors">Lĩnh Vực</a></li>
-    <li><a href="#portfolio">Thành Viên</a></li>
-    <li><a href="#vision">Tầm Nhìn</a></li>
-    <li><a href="#contact">Liên Hệ</a></li>
-  </ul>
-  <div class="nav-actions">
-    <a href="#contact" class="btn-p" style="font-size:.72rem;padding:10px 20px;">Hợp Tác</a>
-    <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+  <div style="max-width:var(--max-w);width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 48px;">
+    <a href="#" class="nav-logo">
+      <img src="images/logo-dng-color.jpg" alt="DNG Investment">
+    </a>
+    <ul class="nav-l">
+      <li><a href="#about">Về DNG</a></li>
+      <li><a href="#sectors">Lĩnh Vực</a></li>
+      <li><a href="#portfolio">Thành Viên</a></li>
+      <li><a href="#vision">Tầm Nhìn</a></li>
+      <li><a href="#contact">Liên Hệ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact" class="btn-p" style="font-size:.72rem;padding:10px 20px;">Hợp Tác</a>
+      <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
