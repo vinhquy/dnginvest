@@ -97,7 +97,7 @@ nav.scrolled{
   background:rgba(248,246,242,0.97);
 }
 .nav-logo{display:flex;align-items:center;gap:10px;}
-.nav-logo img{height:38px;width:auto;transition:height .3s;}
+.nav-logo img{height:52px;width:auto;transition:height .3s;}
 .nav-l{display:flex;align-items:center;gap:40px;list-style:none;}
 .nav-l a{
   font-family:'Inter',sans-serif;font-weight:500;
@@ -269,9 +269,6 @@ nav.scrolled{
 .pc:hover .pc-lk svg{transform:translateX(4px);}
 
 /* featured */
-.pc.feat{grid-column:span 2;background:linear-gradient(135deg,#FDFBF5,#F5EDD8);padding:36px 36px;}
-.pc.feat .pc-logo{height:72px;}
-.pc.feat .pc-n{font-size:1.3rem;}
 .fb{display:inline-flex;font-family:'Barlow Condensed',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--purple);background:rgba(91,63,160,0.08);border:1px solid rgba(91,63,160,0.2);padding:4px 12px;margin-bottom:16px;align-self:flex-start;}
 
 /* ============================================
@@ -355,7 +352,7 @@ footer{background:var(--ink);padding:60px 0 32px;}
   .container{padding:0 32px;}
   nav{padding:0 32px;}
   .pf-g{grid-template-columns:repeat(2,1fr);}
-  .pc.feat{grid-column:span 2;}
+  
   .sectors-g{grid-template-columns:repeat(3,1fr);}
   .ft-g{grid-template-columns:1fr 1fr;gap:32px;}
 }
@@ -385,7 +382,6 @@ footer{background:var(--ink);padding:60px 0 32px;}
   .hs-n{font-size:2rem;}
   #about,#sectors,#portfolio,#vision,#contact{padding:80px 0;}
   .pf-g{grid-template-columns:1fr;}
-  .pc.feat{grid-column:span 1;}
   .sectors-g{grid-template-columns:repeat(2,1fr);}
   #sectors::before{display:none;}
   .sec-hdr{margin-bottom:40px;}
@@ -670,10 +666,10 @@ footer{background:var(--ink);padding:60px 0 32px;}
         <div class="pc-lk">Truy cập website <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
       </a>
 
-      <!-- Yarra Land (featured) -->
-      <a href="https://yarraland.com/" class="pc feat rv r3" target="_blank" rel="noopener">
-        <span class="fb">Bất Động Sản Quốc Tế</span>
-        <div class="pc-logo" style="height:76px;"><img src="images/logo-yarraland.png" alt="Yarra Land" style="max-height:72px;"></div>
+      <!-- Yarra Land -->
+      <a href="https://yarraland.com/" class="pc rv r3" target="_blank" rel="noopener">
+        <div class="pc-cat">Bất Động Sản Quốc Tế</div>
+        <div class="pc-logo"><img src="images/logo-yarraland.png" alt="Yarra Land"></div>
         <div class="pc-n">Yarra Land — Đối Tác Tin Cậy Của Người Việt Tại Úc</div>
         <div class="pc-d">Giải pháp tổng thể BĐS tại Úc: mua bán, quản lý &amp; phát triển dự án, giải pháp tài chính và dịch vụ pháp lý. Cầu nối đáng tin cậy giữa người Việt và thị trường Úc.</div>
         <div class="pc-lk">Truy cập website <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
@@ -793,7 +789,7 @@ footer{background:var(--ink);padding:60px 0 32px;}
   <div class="container ft-b">
     <div class="ft-g">
       <div>
-        <a href="#" class="ft-logo"><img src="images/logo-dng-color.jpg" alt="DNG Investment" style="filter:brightness(0)invert(1);opacity:.9;"></a>
+        <a href="#" class="ft-logo"><img src="images/logo-dng-color.jpg" alt="DNG Investment" style="opacity:.85;"></a>
         <p class="ft-about">Công ty Cổ phần Tập đoàn Đầu tư Quốc tế DNG — Kiến tạo giá trị bền vững cho Việt Nam và Thế Giới.</p>
         <div class="ft-socials">
           <a href="#" class="ft-social" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
